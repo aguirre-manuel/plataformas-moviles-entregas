@@ -59,5 +59,35 @@
     <p>Fuente original: <a href="https://es.wikipedia.org/wiki/Adolf_Hitler">https://es.wikipedia.org/wiki/Adolf_Hitler</a></p>
   </footer>
 
+      <!-- Botón para regresar al índice -->
+  <button onclick="location.href='../index.html'" class="back-btn">Volver al índice</button>
+
+  <style>
+    .back-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Cambié 'left' por 'right' para que esté en la parte derecha */
+  padding: 12px 24px;
+  background-color: #FF6347; /* Tomate, un color vibrante */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para hacerlo más llamativo */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #FF4500; /* Un tono más oscuro al hacer hover */
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.back-btn:active {
+  transform: scale(1); /* Efecto de clic al presionar */
+}
+  </style>
+  
+  
 </body>
 </html>
