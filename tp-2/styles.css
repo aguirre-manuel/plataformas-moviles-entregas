@@ -1,0 +1,90 @@
+/* 1. Color de fondo #222 y texto #ee6 */
+body {
+    background-color: #222;
+    color: #ee6;
+    font-family: sans-serif;
+}
+
+/* 2. Centrar el título principal */
+h1 {
+    text-align: center;
+}
+
+/* 3. Mostrar todos los párrafos con fuente sans-serif (Ya hecho en el body font-family)*/
+
+
+/* 4. Todos los títulos con color #eee */
+h1, h2, h3, h4, h5, h6 {
+    color: #eee;
+}
+
+/* 5. Borde inferior blanco para <strong> */
+strong {
+    border-bottom: 1px solid white;
+}
+
+/* 6. Fondo gris #444 y texto en negrita para .the-force */
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+
+/* 7. Color azul para .light-side, rojo para .dark-side */
+.light-side {
+    color: #66f;
+}
+
+.dark-side {
+    color: #f33;
+}
+
+/* 8. list-style-type: circle para #og-trilogy */
+#og-trilogy {
+    list-style-type: circle;
+}
+
+/* 9. padding-left para el segundo listado de películas */
+.movies-list:nth-of-type(2) {
+    padding-left: 2em;
+}
+
+/* 10. margin-top al último <li> del tercer listado */
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 1em;
+}
+
+/* BONUS TRACKS */
+
+/* A. Títulos en mayúscula */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+/* B. Primera línea del primer párrafo en color #efe */
+p:first-of-type::first-line {
+    color: #efe;
+}
+
+/* C. Cambiar color del título principal al pasar el mouse */
+h1:hover {
+    color: #66f;
+}
+
+/* D. Links visitados cambian a gris */
+a:visited {
+    color: gray;
+}
+
+/* E. Links sin atributo href en cursiva */
+a:not([href]) {
+    font-style: italic;
+}
+
+/* F. Listados de películas alternan fondo #111 y #333 */
+.movies-list li:nth-child(odd) {
+    background-color: #111;
+}
+
+.movies-list li:nth-child(even) {
+    background-color: #333;
+}
